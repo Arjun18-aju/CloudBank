@@ -86,7 +86,8 @@ public class ValidationPage extends base {
 				String actualvalidate = cPage.getMobError().getText();
 				Assert.assertEquals(actualvalidate, expectedVal);
 			}
-
+			cPage.getMobNo().clear();
+                        cPage.getMobNo().sendKeys(Constants.MobNo);
 			cPage.getDob().sendKeys(Constants.dob);
 			cPage.getGenderBox().click();
 			cPage.getGeneralList("Male");
