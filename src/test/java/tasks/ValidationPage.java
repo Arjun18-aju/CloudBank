@@ -134,7 +134,7 @@ public class ValidationPage extends base {
 			List<WebElement> filteredStatus = status.stream().filter(e -> e.getText().equalsIgnoreCase("Active"))
 					.collect(Collectors.toList());
 
-			Assert.assertEquals(cPage.getColumnStatus(), filteredStatus.size());
+			Assert.assertEquals(cPage.getColumnStatus().size(), filteredStatus.size());
 
 		} catch (Exception e) {
 			e.printStackTrace();
