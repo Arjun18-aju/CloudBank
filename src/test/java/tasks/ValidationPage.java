@@ -109,7 +109,7 @@ public class ValidationPage extends base {
 			cPage.getCity().sendKeys("Chennai");
 			cPage.getSubmit().click();
 
-			cPage.getActivate();
+			cPage.getActivate().click();
 
 			cPage.getActivateDate().sendKeys(Constants.ActivationDate);
 
